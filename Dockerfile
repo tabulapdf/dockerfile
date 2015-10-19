@@ -1,7 +1,7 @@
 FROM jruby:1.7.22-jdk
 MAINTAINER Manuel Aristaran <manuel@jazzido> (@manuelaristaran)
 
-RUN apt-get update && apt-get install -y git software-properties-common --no-install-recommends
+RUN apt-get update && apt-get install -y git software-properties-common mupdf-tools --no-install-recommends
 RUN add-apt-repository -y "deb http://httpredir.debian.org/debian jessie contrib" && apt-get update && apt-get install -y ttf-mscorefonts-installer
 
 RUN mkdir /tabula-data
